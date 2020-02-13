@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Aleo:300,700|Beth+Ellen&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Aleo:300,700|Montserrat:900&display=swap'); */
+
+body {
+  font-family: 'Aleo', serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #232952;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: #EE7235;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+a:hover {
+  color: #B45847;
+
+}
+
+script {
+  display: inline-block;
+}
+
+.page-title {
+  color: #232952;
+}
+
+.page-title:hover {
+  color: #EE7235;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+h3 {
+  /* font-family: 'Montserrat', sans-serif; */
+  font-weight: bold;
+  /* text-align: center; */
+  margin: 0;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  letter-spacing: 3px;
+  background-color: #232952;
+  padding: 10px 30px;
+  margin: 20px;
+  border-radius: 30px;
+  color: #fff;
+  border: 0;
+  font-size: 30px;
+  transition: 0.4s;
+}
+
+button:hover {
+  background-color: #EE7235;
+  box-shadow: 0 2px 20px rgba(26, 25, 52, 0.15);
+}
+
+.menu-button {
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+.button-text-container {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  text-align: center;
+  /* left: 50%; */
+  /* transform: translate(-50%, -10%); */
+  /* -ms-transform: translate(-50%, -50%); */
+  /* display: grid; */
+}
+
+.rsvp-banner {
+  text-align: center;
+}
+
+#main-menu {
+  padding: 20px 30px;
+  min-height: 30px;
+  background-color: #fff;
+  box-shadow: 0 2px 20px rgba(26, 25, 52, 0.15);
+  z-index: 1000;
+  position: sticky;
+  display: flex;
+  top: 0;
+}
+
+.main-menu-containers {
+  width: 33%;
+  display: inline;
+  /* display: inline-block; */
+  /* float: left; */
+}
+
+#main-banner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#hero-image {
+  z-index: 10;
+  width: 100%;
+  height: 100%
+  /* background-size: cover; */
+}
+
+#burger-menu {
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin: 0;
+  transition: 0.4s;
+  border-radius: 6px;
+}
+
+.main-content-containers {
+  padding: 30px;
+  margin: 0;
+}
+
+svg:hover {
+  fill: #EE7235;
+  /* background: #000; */
+  /* border-radius: 6px; */
+}
+
+#countdown {
+  font-size: 20px;
+  text-align: right;
+  float: right;
+  margin: 0;
+  padding: 2px 0;
+}
