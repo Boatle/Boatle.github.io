@@ -1,12 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Aleo:300,700|Beth+Ellen&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Aleo:300,700|Montserrat:400,500,700&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Aleo:300,700|Beth+Ellen&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css?family=Aleo:300,700|Montserrat:900&display=swap'); */
 
 body {
   font-family: 'Aleo', serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 22px;
   color: #232952;
   padding: 0;
+  position: relative;
+  padding-bottom: 100px;
+  min-height: 100%;
 }
 
 p {
@@ -62,9 +66,8 @@ script {
 h1 {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
-  margin-top: 5px;
-  margin-bottom: 2px;
   font-size: 28px;
+  margin: 0;
 }
 
 h2 {
@@ -126,6 +129,7 @@ button:hover {
 
 .button-container {
   text-align: center;
+  margin: 50px 0;
 }
 
 .rsvp-banner {
@@ -141,23 +145,33 @@ button:hover {
   position: sticky;
   display: flex;
   flex-wrap: nowrap;
+  align-items: center;
   top: 0;
 }
 
 #footer {
-  background: #EBF0F4;
+  background-color: #EBF0F4;
+  height: 100px;
+  position: absolute;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  bottom: 0;
+  width: 100%;
+}
+
+#footer-content {
+  max-width: 960px;
+  /* width: 100%; */
+  text-align: center;
 }
 
 .main-menu-containers {
   width: 33%;
-  display: inline;
-  /* display: inline-block; */
-  /* float: left; */
 }
 
 #main-banner {
   width: 100%;
-  height: 100%;
   position: relative;
 }
 
@@ -177,88 +191,95 @@ button:hover {
   border-radius: 6px;
 } */
 
-.main-content-containers {
-  padding: 30px;
-  margin: 0 auto;
+#main-content-container {
   max-width: 960px;
+  text-align: center;
+  margin: 0 auto;
 }
 
-#accomodation-content-container {
+.section-containers {
+  padding: 20px 0 80px 0;
+  border-bottom: 2px solid #EBF0F4;
+}
+
+.content-container {
   display: flex;
   flex-wrap: nowrap;
   margin-top: 40px;
 }
 
-.plan-info-content {
-  text-align: left;
-  width: 40%;
+.plan-info-content:first-child {
+  /* background-color: yellow; */
+  margin-right: 10%;
 }
 
-#plan-info-content-left {
-  /* margin-left: 10%; */
-  margin-right: 10%;
+.plan-info-content {
+  text-align: left;
+  width: 50%;
 }
 
 .plan-info-timings {
   display: flex;
   flex-wrap: nowrap;
-  margin: 20px 0;
+  align-items: center;
+  margin: 30px 0 0 0;
 }
 
-#plan-info-icon-container {
-  width: 50px;
-}
-
-.plan-time-info {
-  width: 25%;
-  /* margin-left: 30px; */
-  padding-top: 4px;
+.plan-time {
+  width: 77px;
 }
 
 #countdown {
   color: #EE7235;
   font-size: 20px;
   text-align: right;
-  float: right;
-  margin-top: 6px;
-  padding: 2px 0;
-  vertical-align: middle;
 }
 
 .menu-icon {
-  width: 30px;
-  height: 30px;
-  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 6px;
-  padding: 6px 3px 0px 3px;
   text-align: center;
   transition: 0.4s;
 }
 
 .menu-icon:hover {
-  width: 30px;
-  height: 30px;
   background-color: #EBF0F4;
-  border-radius: 6px;
-  padding: 6px 3px 0px 3px;
 }
 
 /* ICONS */
 
-.fa-bars.fa {
-  font-size: 22px;
-  /* vertical-align: middle;
-  text-align: center; */
+.fa {
+  width: 32px;
+  margin-right: 20px;
+  text-align: center;
 }
 
-.fa-life-ring.fa {
-  width: 45px;
+.fa-bars.fa {
+  font-size: 22px;
+  margin: 0;
+}
+
+.fa-bus.fa {
   font-size: 30px;
   color: #32B8B5;
 }
 
-.fa-microphone.fa {
-  width: 45px;
+.fa-life-ring.fa {
   font-size: 30px;
-  color: #C1C8D7;
+  color: #32B8B5;
+}
+
+.fa-cutlery.fa {
+  font-size: 27px;
+  color: #32B8B5;
+}
+
+.fa-microphone.fa {
+  font-size: 30px;
+  /* color: #C1C8D7; */
+  color: #32B8B5;
 }
