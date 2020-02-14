@@ -319,23 +319,27 @@ button:hover {
 
 /* MEDIA QUERIES */
 
-@media only screen and (max-width: 500px) {
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px) {
+
+/* @media only screen and (max-width: 500px) {
 
   body {
     background-color: lightblue;
     max-width: 500px;
-  }
+  } */
 
   #main-menu {
     /* max-width: 768px; */
   }
 
   #footer-content {
-    max-width: 500px;
+    max-width: 735px;
   }
 
   #main-content-container {
-    max-width: 500px;
+    max-width: 735px;
   }
 
   .img-carousel {
