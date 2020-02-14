@@ -330,7 +330,20 @@ button:hover {
     /* max-width: 768px; */
   }
 
+  #footer-content {
+    max-width: 500px;
+  }
+
+  #main-content-container {
+    max-width: 500px;
+  }
+
+  .img-carousel {
+    display: none;
+  }
+
   #countdown {
+    display: none;
     font-size: 16px;
   }
 }
