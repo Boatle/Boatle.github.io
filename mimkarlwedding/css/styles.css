@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Aleo:300,700|Montserrat:400,500,700&display=swap');
-/* @import url('https://fonts.googleapis.com/css?family=Aleo:300,700|Beth+Ellen&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css?family=Aleo:300,700|Montserrat:900&display=swap'); */
 
 
 
@@ -63,6 +61,7 @@ script {
 .section-titles {
   margin-top: 50px;
   margin-bottom: 20px;
+  line-height: 35px;
 }
 
 h1 {
@@ -140,7 +139,7 @@ button:hover {
   background-color: #F1FAFA;
   text-align: center;
   margin: 40px 0;
-  padding: 40px 0;
+  padding: 0px 50px;
 }
 
 .rsvp-banner {
@@ -323,23 +322,51 @@ button:hover {
 /* and (min-width : 414px) */
 and (max-width : 736px) {
 
-/* @media only screen and (max-width: 500px) {
+/* @media only screen and (max-width: 500px) { */
 
   body {
     background-color: lightblue;
-    max-width: 500px;
-  } */
+    /* max-width: 500px; */
+  }
 
   #main-menu {
     /* max-width: 768px; */
   }
 
+  .main-menu-containers {
+    /* flex-grow: 2; */
+    width: 25%;
+  }
+
+  .main-menu-containers:nth-child(2) {
+    /* flex-grow: 2; */
+    width: 50%;
+  }
+
   #footer-content {
-    max-width: 735px;
+    /* max-width: 735px; */
   }
 
   #main-content-container {
-    max-width: 735px;
+    padding: 0 50px;
+    /* max-width: 735px; */
+  }
+
+  #main-banner {
+    display: none;
+  }
+
+  .content-container {
+    flex-wrap: wrap;
+  }
+
+  .plan-info-content {
+    margin: 60px 0 0 0;
+    width: 100%;
+  }
+
+  .plan-info-content:first-child {
+    margin: 60px 0 0 0;
   }
 
   .img-carousel {
