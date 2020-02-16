@@ -160,6 +160,7 @@ button:hover {
 }
 
 #footer {
+  padding: 0 50px;
   background-color: #F6F6F7;
   height: 100px;
   position: absolute;
@@ -343,6 +344,11 @@ and (max-width : 736px) {
     width: 60%;
   }
 
+  .section-titles {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
   #footer-content {
     /* max-width: 735px; */
   }
@@ -376,9 +382,9 @@ and (max-width : 736px) {
     margin: 60px 0 0 0;
   }
 
-  /* .img-carousel {
-    display: none;
-  } */
+.img-carousel {
+  height: 142px;
+}
 
   #countdown {
     display: none;
