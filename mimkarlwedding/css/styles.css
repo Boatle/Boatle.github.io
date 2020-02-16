@@ -160,7 +160,7 @@ button:hover {
 }
 
 #footer {
-  padding: 0 50px;
+  /* padding: 0 50px; */
   background-color: #F6F6F7;
   height: 100px;
   position: absolute;
@@ -170,6 +170,11 @@ button:hover {
   justify-content: center;
   bottom: 0;
   width: 100%;
+}
+
+.section-titles {
+  padding-left: 50px;
+  padding-right: 50px
 }
 
 #footer-content {
@@ -342,11 +347,6 @@ and (max-width : 736px) {
   .main-menu-containers:nth-child(2) {
     /* flex-grow: 2; */
     width: 60%;
-  }
-
-  .section-titles {
-    padding-left: 50px;
-    padding-right: 50px;
   }
 
   #footer-content {
