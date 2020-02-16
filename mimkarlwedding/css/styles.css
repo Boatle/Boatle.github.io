@@ -139,7 +139,7 @@ button:hover {
   background-color: #F1FAFA;
   text-align: center;
   margin: 40px 0;
-  padding: 0px 50px;
+  padding: 40px 50px;
 }
 
 .rsvp-banner {
@@ -326,7 +326,7 @@ and (max-width : 736px) {
 
   body {
     /* background-color: lightblue; */
-    /* max-width: 500px; */
+    width: 100%;
   }
 
   #main-menu {
