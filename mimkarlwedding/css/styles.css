@@ -114,6 +114,19 @@ button {
   transition: 0.4s;
 }
 
+footer {
+  /* padding: 0 50px; */
+  background-color: #F6F6F7;
+  height: 100px;
+  position: absolute;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+}
+
 button:hover {
   background-color: #EE7235;
   box-shadow: 0 2px 20px rgba(26, 25, 52, 0.15);
@@ -121,7 +134,7 @@ button:hover {
 
 .menu-button {
   background-color: #fff;
-  border-radius: 6px;
+  border-radius: 200px;
 }
 
 .button-text-container {
@@ -129,10 +142,6 @@ button:hover {
   bottom: 50px;
   width: 100%;
   text-align: center;
-  /* left: 50%; */
-  /* transform: translate(-50%, -10%); */
-  /* -ms-transform: translate(-50%, -50%); */
-  /* display: grid; */
 }
 
 .button-container {
@@ -157,19 +166,6 @@ button:hover {
   flex-wrap: nowrap;
   align-items: center;
   top: 0;
-}
-
-#footer {
-  /* padding: 0 50px; */
-  background-color: #F6F6F7;
-  height: 100px;
-  position: absolute;
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center;
-  bottom: 0;
-  width: 100%;
 }
 
 .section-titles {
@@ -259,13 +255,17 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 6px;
+  border-radius: 200px;
   text-align: center;
   transition: 0.4s;
 }
 
 .menu-icon:hover {
   background-color: #EBF0F4;
+}
+
+#tove-valley-map {
+  height: 200px;
 }
 
 /* ICONS */
@@ -326,7 +326,7 @@ button:hover {
 
 @media only screen
 /* and (min-width : 414px) */
-and (max-width : 736px) {
+and (max-width : 960px) {
 
 /* @media only screen and (max-width: 500px) { */
 
@@ -347,6 +347,10 @@ and (max-width : 736px) {
   .main-menu-containers:nth-child(2) {
     /* flex-grow: 2; */
     width: 60%;
+  }
+
+  .section-titles {
+    padding: 0;
   }
 
   #footer-content {
@@ -373,6 +377,10 @@ and (max-width : 736px) {
     flex-wrap: wrap;
   }
 
+  #img-carousel-title {
+    padding: 0 50px;
+  }
+
   .plan-info-content {
     margin: 60px 0 0 0;
     width: 100%;
@@ -382,12 +390,27 @@ and (max-width : 736px) {
     margin: 60px 0 0 0;
   }
 
-.img-carousel {
-  height: 142px;
-}
+  .img-carousel {
+    height: 142px;
+  }
 
   #countdown {
     display: none;
     font-size: 16px;
   }
+}
+
+@media only screen
+/* and (min-width : 414px) */
+and (max-width : 400px) {
+
+  .page-title {
+    font-size: 24px;
+  }
+
+  .section-titles {
+    font-size: 24px;
+  }
+
+
 }
