@@ -8,6 +8,17 @@
   </head>
   <body>
 
+    <div id="modal">
+      <div id="modal-container">
+        <div id="modal-header">
+          <div class="main-menu-containers"></div>
+          <div class="main-menu-containers"><h2>RSVP</h2></div>
+          <div class="main-menu-containers"><i id="modal-cross" class="fa fa-times" aria-hidden="true"></i></div>
+        </div>
+      </div>
+      <div id="modal-overlay"></div>
+    </div>
+
     <div id="main-menu">
       <!-- <div class="main-menu-containers"><svg id="burger-menu"><path d="M20.2285714,17 L3.77142857,17 C3.06171429,17 3,17.447 3,18 C3,18.553 3.06171429,19 3.77142857,19 L20.2285714,19 C20.9382857,19 21,18.553 21,18 C21,17.447 20.9382857,17 20.2285714,17 Z M20.2285714,11 L3.77142857,11 C3.06171429,11 3,11.447 3,12 C3,12.553 3.06171429,13 3.77142857,13 L20.2285714,13 C20.9382857,13 21,12.553 21,12 C21,11.447 20.9382857,11 20.2285714,11 Z M3.77142857,7 L20.2285714,7 C20.9382857,7 21,6.553 21,6 C21,5.447 20.9382857,5 20.2285714,5 L3.77142857,5 C3.06171429,5 3,5.447 3,6 C3,6.553 3.06171429,7 3.77142857,7 Z"></path></svg></div> -->
       <div class="main-menu-containers"><div class="menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></div></div>
@@ -18,7 +29,7 @@
     <div id="main-banner">
       <div class="button-text-container">
         <h3>Friday 9th April 2021<br>Dodmoor House<br>Northamptonshire<br>NN7 4TA</h3>
-        <button>RSVP</button>
+        <button id="RSVP-button">RSVP</button>
       </div>
       <img id="hero-image" src="images/CanalIllustrationOrangeBridge1copy@4x.png">
     </div>
@@ -75,7 +86,7 @@
 
   </div>
   <div class="button-container">
-    <button href="">RSVP</button>
+    <button id="RSVP-button-2">RSVP</button>
     <p class="sub-title-centred">or simply send an email to <a href="mailto:karlandmiriam@aol.com?subject=RSVP%20from &body=I would love to stay at Tove Valley Cottages with you both and my dietary requirementsare...">karlandmiriam@aol.com</a></p>
     <p class="sub-title-centred">Please say whether you would like to stay at the cottages with us and any dietary requirments you have</a></p>
   </div>
@@ -112,7 +123,8 @@
   </footer>
 
   <script src="https://use.fontawesome.com/bb06c15f21.js"></script>
-  <script src="scripts/scripts.js"></script>
+  <script src="scripts/countdown.js"></script>
+  <script src="scripts/modal.js"></script>
   <script src="scripts/ToveMap.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCocXfV9G1SlwTr33Lajk8lKqqXLWkkqEA&callback=initMap"></script>
   </body>
