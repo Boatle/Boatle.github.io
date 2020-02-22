@@ -62,16 +62,18 @@ body {
 
 .form-field {
   display: flex;
-  height: 35px;
+  height: 40px;
   width: 100%;
   background-color: #f3f6f9;
   border: 3px solid #EBF0F4;
+  box-sizing: border-box;
   border-radius: 6px;
   margin: 10px 0;
-  text-indent: 15px;
+  text-indent: 12px;
 }
 
 input:focus {
+  -webkit-appearance: none;
   border: 3px solid #dde3e8;
   background-color: #fff;
   outline: 0;
@@ -279,7 +281,7 @@ button:hover {
 
 #hero-image {
   width: 100%;
-  max-height: 50vh;
+  max-height: 60vh;
   object-fit: cover;
   /* background-size: cover; */
 }
@@ -456,6 +458,10 @@ and (max-width : 768px) {
     position: relative;
   }
 
+  #modal-overlay {
+    display: none;
+  }
+
   body {
     /* background-color: lightblue; */
     width: 100%;
@@ -477,7 +483,7 @@ and (max-width : 768px) {
 
   #hero-image {
     max-height: 80vh;
-    height: 78vh;
+    height: 67vh;
     /* min-height: 55vh; */
     /* max-height: 500px; */
     /* width: auto; */
