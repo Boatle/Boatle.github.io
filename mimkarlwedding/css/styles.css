@@ -70,10 +70,26 @@ body {
   border-radius: 6px;
   margin: 10px 0;
   text-indent: 12px;
+  transition: 0.4s;
+}
+
+.check-box {
+  /* width: 40px; */
+  /* height: 40px; */
+  background-color: #f3f6f9;
+  border: 3px solid #EBF0F4;
+  box-sizing: border-box;
+  border-radius: 6px;
+  margin: 10px 0;
+  transition: 0.4s;
+}
+
+input:hover {
+  border: 3px solid #dde3e8;
 }
 
 input:focus {
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
   border: 3px solid #dde3e8;
   background-color: #fff;
   outline: 0;
@@ -84,8 +100,13 @@ input:focus {
   /* margin-left: 15px; */
 }
 
-label {
-  text-indent: 10px;
+#person2 {
+  display: none;
+}
+
+#add-person-button {
+  display: flex;
+  align-content: center;
 }
 
 p {
@@ -171,9 +192,9 @@ hr {
   width: 180px;
 }
 
-hr:first-child {
+/* hr:first-child {
   display: none;
-}
+} */
 
 .sub-title-centred {
   text-align: center;
@@ -390,6 +411,7 @@ button:hover {
 }
 
 .fa-arrow-circle-o-down.fa {
+  width: 50px;
   font-size: 50px;
   margin: 0;
   color: #e6ecf1;
@@ -401,6 +423,12 @@ button:hover {
   float: right;
   color: #aeb4c1;
   transition: 0.4s;
+}
+
+.fa-plus-circle.fa {
+  width: 20px;
+  font-size: 20px;
+  margin: 0 6px 0 0;
 }
 
 .fa-bus.fa {
@@ -483,7 +511,7 @@ and (max-width : 768px) {
 
   #hero-image {
     max-height: 80vh;
-    height: 67vh;
+    height: 65vh;
     /* min-height: 55vh; */
     /* max-height: 500px; */
     /* width: auto; */
