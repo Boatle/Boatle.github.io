@@ -27,18 +27,21 @@
                 <input id="lname1" type="text" class="form-field" placeholder="eg. Doe"></input>
               </form>
             </div>
-            <div class="form-row">
+            <div class="form-row" id="add-person-button-row">
               <a id="add-person-button"><i class="fa fa-plus-circle" aria-hidden="true"></i>RSVP for two</a>
             </div>
             <div class="form-row" id="person2">
               <form class="form-field-title">
-                <label for="fname2">First Name *</label><br>
+                <label for="fname2">First Name</label><br>
                 <input id="fname2" type="text" class="form-field" placeholder="eg. John"></input>
               </form>
               <form class="form-field-title">
-                <label for="lname2">Last Name *</label><br>
+                <label for="lname2">Last Name</label><br>
                 <input id="lname2" type="text" class="form-field" placeholder="eg. Doe"></input>
               </form>
+            </div>
+            <div class="form-row" id="remove-person-button-row">
+              <a id="remove-person-button"><i class="fa fa-minus-circle" aria-hidden="true"></i>RSVP for one</a>
             </div>
             <div class="form-row">
               <form class="form-field-title">
@@ -52,11 +55,15 @@
                 <input id="diet" type="text" class="form-field" placeholder="Yes, peanuts are the worst"></input>
               </form>
             </div>
-            <div class="spotify-playlist">
+            <div id="modal-playlist" class="spotify-playlist">
               <label>While you're here, you can visit our Spotify playlist add any music which will get you on the dancefloor...</label><br>
-              <iframe class="spotify-playlist" src="https://open.spotify.com/embed/playlist/4zrevTdUh3MZ0hr7vyFdyW" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+              <iframe id="modal-playlist" class="spotify-playlist" src="https://open.spotify.com/embed/playlist/4zrevTdUh3MZ0hr7vyFdyW" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
             </div>
           </div>
+        </div>
+        <div id="modal-footer">
+          <div class="two-column-containers"><button id="modal-button-cancel" class="modal-button">Regretfully Decline</button></div>
+          <div class="two-column-containers"><button id="modal-button-confirm" class="modal-button">Happily Attend</button></div>
         </div>
       </div>
       <div id="modal-overlay"></div>
@@ -65,16 +72,16 @@
     <div id="main-menu">
       <!-- <div class="main-menu-containers"><svg id="burger-menu"><path d="M20.2285714,17 L3.77142857,17 C3.06171429,17 3,17.447 3,18 C3,18.553 3.06171429,19 3.77142857,19 L20.2285714,19 C20.9382857,19 21,18.553 21,18 C21,17.447 20.9382857,17 20.2285714,17 Z M20.2285714,11 L3.77142857,11 C3.06171429,11 3,11.447 3,12 C3,12.553 3.06171429,13 3.77142857,13 L20.2285714,13 C20.9382857,13 21,12.553 21,12 C21,11.447 20.9382857,11 20.2285714,11 Z M3.77142857,7 L20.2285714,7 C20.9382857,7 21,6.553 21,6 C21,5.447 20.9382857,5 20.2285714,5 L3.77142857,5 C3.06171429,5 3,5.447 3,6 C3,6.553 3.06171429,7 3.77142857,7 Z"></path></svg></div> -->
       <div class="main-menu-containers"><div class="menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></div></div>
-      <div class="main-menu-containers"><h1><a class="page-title" href="index.html">MIM & KARL</a></h1></div>
+      <div class="main-menu-containers"><h1><a class="page-title" href="index.html">MIRIAM <span id="ampersand">&</span> KARL</a></h1></div>
       <div class="main-menu-containers"><div id="countdown"></div></div>
     </div>
 
     <div id="main-banner">
       <div class="button-text-container">
-        <h3>Friday 9th April 2021<br>Dodmoor House<br>Northamptonshire<br>NN7 4TA</h3>
+        <h3 id="venue-info">Friday 9th April 2021<br>Dodmoor House<br>Northamptonshire<br>NN7 4TA</h3>
         <button id="RSVP-button">RSVP</button>
       </div>
-      <img id="hero-image" src="images/CanalIllustrationOrangeBridge1copy@4x.png">
+      <img id="hero-image" src="images/CanalIllustrationOrangeBridge2@4x.png">
     </div>
   <div class="main-content-container">
     <div id="arrow-down"><i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i></div>
@@ -83,7 +90,7 @@
       <h2 class="section-titles">THE PLAN</h2>
       <p class="sub-title-centred">A brief overview of the weekend</p>
       <div class="content-container">
-        <div class="plan-info-content"><h3>The Wedding<span class="h3-italics">Friday</span></h3>
+        <div class="plan-info-content"><h3>The Wedding<span class="h3-sub">Friday</span></h3>
           <div class="plan-info-timings"><i class="fa fa-bus" aria-hidden="true"></i><span class="plan-time">1:15pm</span><span>Arrive</span></div>
           <div class="plan-info-timings"><i class="fa fa-life-ring" aria-hidden="true"></i><span class="plan-time">2pm</span><span>Ceremony</span></div>
           <div class="plan-info-timings"><i class="fa fa-microphone" aria-hidden="true"></i><span class="plan-time">3:30pm</span><span>Speeches</span></div>
@@ -92,7 +99,8 @@
           <div class="plan-info-timings"><i class="fa fa-music" aria-hidden="true"></i><span class="plan-time">7pm</span><span>Band</span></div>
           <div class="plan-info-timings"><i class="fa fa-ambulance" aria-hidden="true"></i><span class="plan-time">Midnight</span><span>Carriages</span></div>
         </div>
-        <div class="plan-info-content"><h3>After Gathering<span class="h3-italics">Saturday</span></h3>
+        <div class="plan-info-content"><h3>After Gathering<span class="h3-sub">Saturday</span></h3>
+          <p>One day isn’t enough with you,<br>Rather celebrate for more like two.<br>So, we would love for you to stay,<br>With us - a proper little getaway!</p>
           <p>We would love to get as many of you together as possible for a de-brief.</p>
           <p>The plan is to head out for a walk in the afternoon, from Tove Valley Cottages, to clear our heads befoe heading back to the cottages for food and drinks.</p>
           <p>Anyone not staying at Tove Valley is still welcome to join, of course.</p>
@@ -108,20 +116,20 @@
         <div class="plan-info-content"><h3>Tove Valley Cottages</h3>
           <p>We have reserved some cottages for our wedding weekend and those of you staying will already know details.</p>
           <p>The cottages will become the base for a re-gathering on the Saturday afternoon, with invites extended to all guests should you feel you would like a walk along the canal and drinks in the evening.</p>
-          <p>Due to a 3pm check-in, those staying at the cottages will need to be there on the Thursday evening after work, where we will be there to greet you. </p>
-          <p>The cost of this stay is £120 for the three nights, including travel to the venue and some food on the thursday evening.</p>
+          <p>Due to a 3pm check-in, those staying at the cottages will need to be there on the Thursday evening after work, where we will be there to greet you.</p>
+          <p>The cost of this stay is £120 for the three nights, including travel to the venue and some food on the thursday evening. We will have to ask for this to be paid by 1st October 2020 (friendlier wording).</p>
           <div id="tove-valley-map"></div>
           <a target="_blank" href="https://www.google.com/maps/place/Tove+Valley+Farm+Cottages/@52.1204393,-0.9832647,14z/data=!4m10!3m9!1s0x0:0xd183953bbf5eb57c!5m4!1s2020-04-09!2i2!4m1!1i2!8m2!3d52.1247415!4d-0.963251">See map</a>
         </div>
         <div class="plan-info-content"><h3>Alternative Hotels</h3>
-          <p>We would suggest you staying near the cottages rather than the venue, that way it will be easier to join us on the Saturday.</p>
+          <p>If you want to stay elsewhere, we would suggest you stay near the cottages rather than the venue. That way it will be easier to join us on the Saturday.</p>
           <p>Here are a few options:</p>
           <ol>
             <li class="body-list-items"><a target="_blank" href="https://www.travelodge.co.uk/hotels/185/Towcester-Silverstone-hotel?WT.tsrc=GHA_Organic&utm_campaign=GHA_Towcester%20Silverstone&utm_medium=GHA_Organic&utm_source=google">Travelodge Towcester</a><span>hello</span></li>
             <li class="body-list-items"><a target="_blank" href="http://thegranary.woodburcote.co.uk/">The Granary Barn</a></li>
             <li class="body-list-items"><a target="_blank" href="">Option 1</a></li>
           </ol>
-          <p>If you would rather stay near the venue <a target="_blank" href="https://www.google.com/maps/place/Dodmoor+House/@52.2452768,-1.1174177,13.38z/data=!4m15!1m6!2m5!1sHotels!5m3!5m2!1s2020-04-09!2i2!3m7!1s0x0:0x5b02fd4a475112b7!5m2!1s2020-04-09!2i2!8m2!3d52.2418211!4d-1.085844">here is a map</a> with suggestions nearby.</p>
+          <p>If you would rather stay near the venue <a target="_blank" href="https://www.google.com/maps/place/Dodmoor+House/@52.2452768,-1.1174177,13.38z/data=!4m15!1m6!2m5!1sHotels!5m3!5m2!1s2020-04-09!2i2!3m7!1s0x0:0x5b02fd4a475112b7!5m2!1s2020-04-09!2i2!8m2!3d52.2418211!4d-1.085844">here is a map</a> with suggested hotels nearby.</p>
         </div>
       </div>
 

@@ -23,17 +23,26 @@ document.getElementById('modal-cross').onclick = closeModal
 function addPerson() {
   let modal = document.getElementById('person2')
   modal.style.display = 'flex'
-  // button('add-person-button').style.display = 'none'
 }
 
 document.getElementById('add-person-button').onclick = addPerson
 
-// function hideAddPerson() {
-//   let modal = document.getElementById('add-person-button')
-//   modal.style.display = 'none'
-// }
-//
-// document.getElementById('add-person-button').onclick = hideAddPerson
-//
-// addPerson;
-// hideAddPerson;
+function hideAddPerson() {
+  let button = document.getElementById('add-person-button-row')
+  button.style.display = 'none'
+  // setTimeout(function () {
+  //
+  // }, 3000);
+}
+
+document.getElementById('add-person-button').onclick = hideAddPerson
+
+
+function removePerson() {
+  let modal = document.getElementById('remove-person-button-row')
+  modal.style.display = 'flex'
+}
+
+document.getElementById('add-person-button').onclick = removePerson
+
+// document.getElementById('add-person-button').onclick = addPerson; removePerson; hideAddPerson;
