@@ -10,6 +10,7 @@
 
     <div id="modal">
       <div id="modal-container">
+        <form class="gform" method="POST" data-email="karlandmiriam@aol.com" action="https://script.google.com/macros/s/AKfycbzeSP77ScG3VAZox0bh2FZ5YtU5H-s4JhUKP76XKqcOpCYN2Yw/exec">
         <div id="modal-header">
           <div class="main-menu-containers"></div>
           <div class="main-menu-containers"><h2>RSVP</h2></div>
@@ -18,42 +19,52 @@
         <div class="main-content-container">
           <div class="section-containers">
             <div class="form-row">
-              <form class="form-field-title">
-                <label for="fname1">First Name *</label><br>
-                <input id="fname1" type="text" class="form-field" placeholder="eg. Jane"></input>
-              </form>
-              <form class="form-field-title">
-                <label for="lname1">Last Name *</label><br>
-                <input id="lname1" type="text" class="form-field" placeholder="eg. Doe"></input>
-              </form>
+              <fieldset class="form-field-title pure-group">
+                <label for="FirstName1">First Name *</label><br>
+                <input id="FirstName1" name="FirstName1" type="text" class="form-field gform" placeholder="eg. Jane" required></input>
+              </fieldset>
+              <fieldset class="form-field-title pure-group">
+                <label for="Surname1">Last Name *</label><br>
+                <input id="Surname1" name="Surname1" type="text" class="form-field gform" placeholder="eg. Doe" required></input>
+              </fieldset>
             </div>
             <div class="form-row" id="add-person-button-row">
               <a id="add-person-button"><i class="fa fa-plus-circle" aria-hidden="true"></i>RSVP for two</a>
             </div>
             <div class="form-row" id="person2">
-              <form class="form-field-title">
-                <label for="fname2">First Name</label><br>
-                <input id="fname2" type="text" class="form-field" placeholder="eg. John"></input>
-              </form>
-              <form class="form-field-title">
-                <label for="lname2">Last Name</label><br>
-                <input id="lname2" type="text" class="form-field" placeholder="eg. Doe"></input>
-              </form>
+              <fieldset class="form-field-title pure-group">
+                <label for="FirstName2">First Name</label><br>
+                <input id="FirstName2" name="FirstName2" type="text" class="form-field" placeholder="eg. John"></input>
+              </fieldset>
+              <fieldset class="form-field-title pure-group">
+                <label for="Surname2">Last Name</label><br>
+                <input id="Surname2" name="Surname2" type="text" class="form-field" placeholder="eg. Doe"></input>
+              </fieldset>
             </div>
             <div class="form-row" id="remove-person-button-row">
               <a id="remove-person-button"><i class="fa fa-minus-circle" aria-hidden="true"></i>RSVP for one</a>
             </div>
             <div class="form-row">
-              <form class="form-field-title">
-                <input id="accomm-check" type="checkbox" class="check-box"></input>
-                <label for="accomm-check">I / We would love to join you at Tove Valley Cottages</label>
-              </form>
+              <fieldset class="form-field-title pure-group">
+                <input id="Accom" name="Accom" type="checkbox" class="check-box" checked></input>
+                <label for="Accom">I / We would love to join you at Tove Valley Cottages</label>
+              </fieldset>
             </div>
             <div class="form-row">
-              <form class="form-field-title">
-                <label for="diet">Dietary Requirements</label><br>
-                <input id="diet" type="text" class="form-field" placeholder="Yes, peanuts are the worst"></input>
-              </form>
+              <fieldset class="form-field-title pure-group">
+                <label for="Email">Email Address *</label><br>
+                <input id="Email" name="Email" type="text" class="form-field" placeholder="jane.doe@email.com" required></input>
+              </fieldset>
+            </div>
+            <div class="form-row">
+              <fieldset class="form-field-title pure-group">
+                <label for="Diet">Dietary Requirements</label><br>
+                <input id="Diet" name="Diet" type="text" class="form-field" placeholder="Yes, peanuts are the worst"></input>
+              </fieldset>
+            </div>
+            <div id="modal-footer">
+              <div class="two-column-containers pure-group"><button id="modal-button-cancel" Name="Cancel" class="modal-button" value="RD">Regretfully Decline</button></div>
+              <div class="two-column-containers pure-group"><button id="modal-button-confirm" name="Attend" class="modal-button pure-button" value="HA">Happily Attend</button></div>
             </div>
             <div id="modal-playlist" class="spotify-playlist">
               <label>While you're here, you can visit our Spotify playlist add any music which will get you on the dancefloor...</label><br>
@@ -61,11 +72,10 @@
             </div>
           </div>
         </div>
-        <div id="modal-footer">
-          <div class="two-column-containers"><button id="modal-button-cancel" class="modal-button">Regretfully Decline</button></div>
-          <div class="two-column-containers"><button id="modal-button-confirm" class="modal-button">Happily Attend</button></div>
-        </div>
+
+
       </div>
+      </form>
       <div id="modal-overlay"></div>
     </div>
 
