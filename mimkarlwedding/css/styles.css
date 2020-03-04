@@ -39,7 +39,7 @@ body {
   /* display: none; */
 }
 
-.thankyou_message {
+#thankyou_message {
   display: none;
 }
 
@@ -113,7 +113,7 @@ input:focus {
 
 #person2 {
   display: none;
-  /* opacity: 0; */
+  opacity: 0;
   transition: opacity 0.4s ease-in-out;
 }
 
@@ -178,6 +178,10 @@ p {
   font-size: 15px;
   font-weight: normal;
   margin-left: 10px;
+}
+
+a, button {
+  cursor: pointer;
 }
 
 a {
@@ -289,7 +293,7 @@ button:hover {
   float: right;
 }
 
-#modal-button-cancel {
+.modal-button-cancel {
   background-color: #aeb4c1;
 }
 
@@ -431,7 +435,7 @@ footer {
 }
 
 #modal-playlist {
-  min-height: 213px;
+  min-height: 396px;
 }
 
 .plan-info-timings {
