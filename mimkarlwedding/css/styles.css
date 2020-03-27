@@ -82,7 +82,7 @@ input {
   text-indent: 12px;
   transition: 0.4s;
   font-weight: 200;
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
   /* box-shadow: none !important; */
   webkit
 }
@@ -283,6 +283,11 @@ button:hover {
   box-shadow: 0 2px 20px rgba(26, 25, 52, 0.15);
 }
 
+/* button:disabled {
+  opacity: 0.5;
+  display: none;
+} */
+
 #RSVP-button {
   margin: 20px;
 }
@@ -301,7 +306,7 @@ button:hover {
 }
 
 #modal-button-cancel:hover {
-  background-color: #8a8e9a;
+  background-color: #555865;
 }
 
 footer {
@@ -361,8 +366,8 @@ footer {
 }
 
 #modal-footer {
-  display: flex;flex-wrap: nowrap;
-  height: 50px;
+  display: flex;
+  flex-wrap: nowrap;
   margin: 40px 0;
 }
 
@@ -684,10 +689,6 @@ and (max-width : 750px) {
 
   .two-column-containers {
     width: 100%;
-  }
-
-  #modal-footer {
-    margin: 100px 0 40px 0;
   }
 
   .modal-button {
